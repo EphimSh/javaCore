@@ -5,17 +5,18 @@ public class Main {
         StringToIntTransmuteAndSum stringToIntTransmuteAndSum = new StringToIntTransmuteAndSum();
 
         String[][] str = new String[][]{
-                {"one", "2", "3", "4"},
-                {"1", "two", "3", "4"},
-                {"1", "2", "three", "4"},
+                {"1", "2", "3", "4"},
+                {"1", "2", "3", "4"},
+                {"1", "2", "3", "4"},
                 {"1", "2", "3", "four"},
-//                {"6", "4", "3", "2", "1"}
+//                {"1", "2", "3", "four"}
         };
 
         try {
-            stringToIntTransmuteAndSum.transmuteStringToInt(str);
+            stringToIntTransmuteAndSum.transmuteStringToIntAndSum(str);
         } catch (MyArrayDataException | MyArraySizeException mde) {
             System.out.println(mde.getMessage());
+            System.out.printf("Result of sum of all parsed integers is: %s",stringToIntTransmuteAndSum.transmuteStringToIntSumResult());
         }
 
     }
