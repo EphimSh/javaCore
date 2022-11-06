@@ -34,7 +34,7 @@ public class UserInterfaceView {
                 System.out.println("Error. Wrong request. Check if your input city name right");
             }
             System.out.println("Do you want to continue? Y/N");
-            command = scanner.nextLine();
+            command = scanner.nextLine().toUpperCase(Locale.ROOT);
             if ("N".equals(command)) {
                 break;
             } else if ("Y".equals(command)) ;
