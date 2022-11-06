@@ -45,15 +45,15 @@ public class WeatherAPIModel implements VöderModel {
                 break;
 
 
-            case FIVE_DAYS_FORECAST:
-                FiveDaysWeatherForecastOnNextDays(city);
+            case FIVE_DAY_FORECAST:
+                FiveDayWeatherForecastOnNextDays(city);
 
 
         }
 
     }
 
-    private void FiveDaysWeatherForecastOnNextDays(String city) throws IOException {
+    private void FiveDayWeatherForecastOnNextDays(String city) throws IOException {
         //FORECASThttps://api.weatherapi.com/v1/forecast.json?key=27120ec828d145d4bba92345223010&q=Yakutsk&days=10&aqi=no&alerts=no
 
         HttpUrl url = new HttpUrl.Builder()
