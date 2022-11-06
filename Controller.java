@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static javaCore.lesson6.OkHttp.WeatherResponseInterfaace.Period.FIVE_DAYS_FORECAST;
+import static javaCore.lesson6.OkHttp.WeatherResponseInterfaace.Period.FIVE_DAY_FORECAST;
 import static javaCore.lesson6.OkHttp.WeatherResponseInterfaace.Period.NOW;
 
 
@@ -20,7 +20,7 @@ public class Controller {
 
     public Controller(){
         variants.put(1, NOW);
-        variants.put(5, FIVE_DAYS_FORECAST);
+        variants.put(5, FIVE_DAY_FORECAST);
 
     }
 
@@ -32,8 +32,8 @@ public class Controller {
                 weatherModel.getWeather(cityName, NOW);
                 break;
 
-            case FIVE_DAYS_FORECAST:
-                weatherModel.getWeather(cityName, FIVE_DAYS_FORECAST);
+            case FIVE_DAY_FORECAST:
+                weatherModel.getWeather(cityName, FIVE_DAY_FORECAST);
 
         }
     }
